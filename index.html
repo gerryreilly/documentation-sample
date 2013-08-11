@@ -34,6 +34,17 @@ title: "John Colgrave"
         <section id="main-content">
           <p>This is the initial Page for the Documentation-sample project/repository. This text was added during the initial automatic creation of the page.</p>
 <p>This paragraph was added by editing file remotely and then pushing back the HTML.</p>
+
+            <h1>Blog Posts</h1>
+            <p>
+                <ul>
+                    {% for post in site.posts %}
+                    <li>
+                        <a href="{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </p>
         </section>
 
         <aside id="sidebar">
